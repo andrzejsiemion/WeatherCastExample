@@ -8,6 +8,9 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
+
+- script: dotnet --list-sdks
+
 - task: UseDotNet@2
   inputs:
     packageType: 'sdk'
